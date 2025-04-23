@@ -52,24 +52,39 @@
         <ul>
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="about.html">About Us</a></li>
-          <li class="drop-down"><a href="what-we-do.html">What We Do</a>
+          <li class="drop-down"><a href="what-we-do.html"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="what-we-do.html#consulting-services">Consulting Services</a></li>
-              <li><a href="what-we-do.html#implementation-support">Implementation Support</a></li>
-              <li><a href="what-we-do.html#training">Training</a></li>
+              <li><a href="what-we-do.html#consulting-services">SAP Services</a></li>
+              <li class="drop-down"><a href="#"><span>SAP DRC by Regions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Europe</a></li>
+                  <li><a href="#">North America</a></li>
+                  <li><a href="#">Latin America</a></li>
+                  <li><a href="#">Asia-Pacific</a></li>
+                  <li><a href="#">Middle East & Africa</a></li>
+                </ul>
+              </li>              
+              <li><a href="what-we-do.html#training">Global Regulatory Monitor</a></li>
             </ul>
           </li>
-          <li class="drop-down"><a href="https://www.blogs.titaneagle.ca/">Insights</a>
+          <li class="drop-down"><a href="https://www.blogs.titaneagle.ca/">Knowledge Center</a>
             <ul>
+              <li class="drop-down"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Case Studies</a></li>
+                  <li><a href="#">Whitepapers & Guides</a></li>
+                  <li><a href="#">Webinar & Videos</a></li>
+                  <li><a href="#">Regulatory Insights</a></li>
+                  <li><a href="#">Infographics & Cheat Sheets</a></li>
+                  <li><a href="#">Client Toolkits & Checklists</a></li>
+                </ul>
+              </li>               
               <li><a href="https://blogs.titaneagle.ca">Blogs</a></li>
-              <li><a href="https://www.blogs.titaneagle.ca/best-practices">Best Practices</a></li>
-              <li><a href="https://www.blogs.titaneagle.ca/demos">Demos</a></li>
-              <li><a href="https://www.blogs.titaneagle.ca/industry-news">Industry News</a></li>
+              <li><a href="https://www.blogs.titaneagle.ca/demos">Glossary & FAQs</a></li>
             </ul>
-          </li>
-          <li><a href="https://www.blogs.titaneagle.ca/customer-success">Customer Success</a></li>
+          </li>       
           <li><a href="https://www.blogs.titaneagle.ca/careers">Careers</a></li>
-          <li><a href="https://www.blogs.titaneagle.ca/contact">Contact</a></li>
+          <li class="py-0"><button class="btn btn-primary" href="https://www.blogs.titaneagle.ca/contact">Book a Consultation</button></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -81,11 +96,10 @@
 
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
       <div class="row">
-        <div class="col-xl-6">
-          <h1>State of the art SAP Consultants. </h1>
-          <h2>We provide end-to-end consulting services to implement SAP S/4HANA transformations for new and existing SAP customers.  
-            Your trusted partner in SAP S/4HANA Transformation Journey.</h2>
-          <a href="#services" class="btn-get-started scrollto">Get Started</a>
+        <div class="col text-center">
+          <h1>Global SAP Document & <br> Reporting Compliance Made Simple </h1>
+          <h2>Specialising in e-invoicing, e-reporting, VAT returns and Statutory reports across 5 continents.</h2>
+          <a href="#services" class="btn-get-started scrollto">Get a Free Compliance Review</a>
         </div>
       </div>
     </div>
@@ -94,46 +108,91 @@
 
   <main id="main">
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= Overview Section ======= -->
     <section id="services" class="services">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Services</h2>
+          <h2>Overview</h2>
           <h3>Check our <span>Services</span></h3>
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-bulb"></i></div>
-              <h4><a href="what-we-do.html#consulting-services">Consulting Services</a></h4>
-              <p>We are SAP expert consultants in the area of SAP finance and taxes.</p>
+              <div class="icon"><img src="./assets/img/icons/e-invoice.png" style="width: 75px;"></div>
+              <h4><a href="what-we-do.html#consulting-services">E-Invoicing</a></h4>
+              <p>Automate, validate, and submit e-invoices with country-specific formats and real-time integrations.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-line-chart"></i></div>
-              <h4><a href="what-we-do.html#implementation-support">Implementation Support</a></h4>
-              <p>We are your expert connect to SAP S/4HANA finance and analytics implementation.</p>
+              <div class="icon"><img src="./assets/img/icons/e-report.png" style="width: 75px;"></div>
+              <h4><a href="what-we-do.html#implementation-support">E-Reporting</a></h4>
+              <p>Ensure timely, accurate transmission of financial and tax data to local authorities via SAP DRC.</p>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class='bx bxs-briefcase-alt'></i></div>
-              <h4><a href="what-we-do.html#training">Workshop & Training</a></h4>
-              <p>Quality Assurance Review / Solution review workshops.</p>
+              <div class="icon"><img src="./assets/img/icons/statutory.png" style="width: 75px;"></div>
+              <h4><a href="what-we-do.html#training">Statutory Reports</a></h4>
+              <p>Generate audit-ready Statutory Reports tailored to each region's legal requirements and compliance.</p>
             </div>
           </div>
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section><!-- End Overview Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container-fluid px-5" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Overview</h2>
+          <h3>Why <span>Titan Eagle?</span></h3>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body"><img src="./assets/img/icons/Europe.png" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body"><img src="./assets/img/icons/NorthAmerica.png" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body"><img src="./assets/img/icons/LatinAmerica.png" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body"><img src="./assets/img/icons/APAC.png" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body"><img src="./assets/img/icons/MiddleEast.png" style="width: 100%;"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 mb-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="card">
+              <div class="card-body"><img src="./assets/img/icons/Africa.png" style="width: 100%;"></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->    
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about section-bg">
+    <section id="about" class="about">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -161,7 +220,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services" style="border-bottom: 1px solid #106eea;">
+    <section id="featured-services" class="featured-services section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -172,15 +231,15 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Advanced Compliance Reporting for Legal Compliance</a></h4>
+              <h4 class="title"><a href="">SAP DRC Implementation</a></h4>
               <!-- <p class="description"></p> -->
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">SAP S/4HANA Central Finance implementation</a></h4>
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Global Compliance & Localization</a></h4>
               <!-- <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p> -->
             </div>
           </div>
@@ -188,14 +247,14 @@
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">SAP Taxes Implementation support</a></h4>
+              <h4 class="title"><a href="">Ongoing Support & Optimization</a></h4>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Testing Services</a></h4>
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Training & Enablement</a></h4>
             </div>
           </div>
 
@@ -204,11 +263,89 @@
       </div>
     </section><!-- End Featured Services Section -->
 
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <h3>Saul Goodman</h3>
+            <h4>Ceo &amp; Founder</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <h3>Sara Wilsson</h3>
+            <h4>Designer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <h3>Jena Karlis</h3>
+            <h4>Store Owner</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+            <h3>Matt Brandon</h3>
+            <h4>Freelancer</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+            <h3>John Larson</h3>
+            <h4>Entrepreneur</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-
+    <div class="footer-newsletter">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h4>Need help navigating your SAP compliance strategy?</h4>
+            <p>Get a free Consultation.</p>
+            <form action="forms/newsletter.php" method="post" class="php-email-form">
+              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -268,10 +405,6 @@
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <a href="https://www.blogs.titaneagle.ca/contact" class="btn btn-lg btn-primary floating-contact">
-    <i class="icofont-envelope icofont-2x"></i>
-    <span class="d-none d-lg-block">&nbsp; Contact Us</span>
-  </a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
