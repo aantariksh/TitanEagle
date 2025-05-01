@@ -53,7 +53,13 @@
           <li><a href="about.html">About Us</a></li>
           <li class="drop-down"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="sap-drc.html">SAP Services</a></li>
+              <li class="drop-down"><a href="sap-drc.html"><span>SAP Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="sap-drc.html#implementation">📊 SAP DRC Implementation</a></li>
+                  <li><a href="sap-drc.html#support">🔄 Ongoing Support & Optimization</a></li>
+                  <li><a href="sap-drc.html#training">📚 Training & Enablement</a></li>
+                </ul>
+              </li>  
               <li class="drop-down"><a href="#"><span>SAP DRC by Regions</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="europe.html">Europe</a></li>
@@ -71,12 +77,12 @@
             <ul>
               <li class="drop-down"><a href="#"><span>Resources</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Case Studies</a></li>
-                  <li><a href="#">Whitepapers & Guides</a></li>
-                  <li><a href="#">Webinar & Videos</a></li>
-                  <li><a href="#">Regulatory Insights</a></li>
-                  <li><a href="#">Infographics & Cheat Sheets</a></li>
-                  <li><a href="#">Client Toolkits & Checklists</a></li>
+                  <li><a href="https://blogs.titaneagle.ca">📄 Case Studies</a></li>
+                  <li><a href="https://blogs.titaneagle.ca">📘 Whitepapers & Guides</a></li>
+                  <li><a href="https://blogs.titaneagle.ca">🎥 Webinar & Videos</a></li>
+                  <li><a href="https://blogs.titaneagle.ca">🔅 Regulatory Insights</a></li>
+                  <li><a href="https://blogs.titaneagle.ca">📊 Infographics & Cheat Sheets</a></li>
+                  <li><a href="https://blogs.titaneagle.ca">✅  Client Toolkits & Checklists</a></li>
                 </ul>
               </li>               
               <li><a href="https://blogs.titaneagle.ca">Blogs</a></li>
@@ -130,36 +136,44 @@
           <p>Join our team and be part of a dynamic, innovative company – explore exciting career opportunities with us!</p>
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <form action="https://formspree.io/f/yourFormID" method="POST" enctype="multipart/form-data" role="form" class="php-email-form">
+          <input type="hidden" name="_subject" value="New Titan Eagle Careers Application">
           <div class="form-row">
             <div class="col form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-              <div class="validate"></div>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required minlength="4" />
             </div>
             <div class="col form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-              <div class="validate"></div>
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required />
             </div>
           </div>
+        
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Company" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validate"></div>
+            <input type="text" class="form-control" name="company" id="company" placeholder="Current Company" required minlength="2" />
           </div>
+        
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Region" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-            <div class="validate"></div>
+            <input type="text" class="form-control" name="region" id="region" placeholder="Region (e.g., Europe, Asia)" required minlength="2" />
           </div>
+        
           <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-            <div class="validate"></div>
+            <textarea class="form-control" name="message" rows="5" required placeholder="Tell us briefly about your SAP experience and areas of expertise."></textarea>
           </div>
+        
+          <div class="form-group">
+            <label for="resume">Upload Your Resume (PDF or DOC):</label>
+            <input type="file" class="form-control-file" name="resume" id="resume" accept=".pdf,.doc,.docx" required />
+          </div>
+        
           <div class="mb-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="sent-message">Thank you! Your application has been submitted.</div>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
-        </form>
+        
+          <div class="text-center">
+            <button type="submit">Submit Application</button>
+          </div>
+        </form>        
 
       </div>
     </section><!-- End Contact Section -->   
