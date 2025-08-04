@@ -1468,8 +1468,13 @@ section {
   list-style: none;
 }
 
-.faq .faq-list li {
+.faq .faq-list .faq-question {
   padding: 0 0 20px 25px;
+}
+
+.faq .faq-list .collapse {
+  margin-top: 20px;
+  font-size: 15px;
 }
 
 .faq .faq-list a {
@@ -1487,11 +1492,6 @@ section {
   top: 6px;
 }
 
-.faq .faq-list p {
-  margin-bottom: 20px;
-  font-size: 15px;
-}
-
 .faq .faq-list a.collapse {
   color: #106eea;
 }
@@ -1506,6 +1506,13 @@ section {
 
 .faq .faq-list a.collapsed i::before {
   content: "\eab2" !important;
+}
+
+.faq .faq-list .collapse a {
+  all: unset;
+  color: #007bff;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /*--------------------------------------------------------------
